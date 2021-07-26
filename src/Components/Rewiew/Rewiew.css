@@ -1,0 +1,14 @@
+.rewiew_block {
+    background-color: #F2F2F6;
+    padding-top: 15px;
+    border-radius: 5px;
+}
+
+.rewiew_text {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.span_review {
+    font-size: 22;
+}
