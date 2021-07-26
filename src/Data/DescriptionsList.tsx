@@ -13,7 +13,7 @@ export type DescriptionDataType = {
 const DeveloperImage: React.FC<any> = () => {
     return(
         <div>
-            <img src="./images/icDeveloper@3x.png" alt="icDeveloper" style={{ width: 26, height: 26 }}/>
+            <img src="https://zharikovartem.github.io/puzzle/images/icDeveloper@3x.png" alt="icDeveloper" style={{ width: 26, height: 26 }}/>
         </div>
     )
 }
@@ -30,7 +30,7 @@ const StarLine: React.FC<any> = (props) => {
                         width:14,
                         height: 14
                     }}
-                    src="./images/icStarFull@3x.png" 
+                    src="https://zharikovartem.github.io/puzzle/images/icStarFull@3x.png" 
                     alt="icStarFull"
                 />
             )       

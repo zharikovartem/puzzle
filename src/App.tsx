@@ -40,7 +40,7 @@ const App:React.FC<any> = () => {
       <br/><br/><br/><br/><br/><br/>
       <div className="d-flex mt-2" style={{height: 116}}>
         <div className="" style={{height: 116, width: 116}}>
-          <img src="./images/logoJp.png" alt="logoJp" />
+          <img src="https://zharikovartem.github.io/puzzle/images/logoJp.png" alt="logoJp" />
         </div>
         <div className="d-flex flex-column mx-3 justify-content-between">
           <span  
@@ -79,7 +79,7 @@ const App:React.FC<any> = () => {
             </div>
             <div className="mb-0 " >
               <Button size="middle" className="p-0 justify-content-end" type="text" shape="round" >
-                <img src="./images/btnShare.png" alt="btnShare.png" />
+                <img src=".https://zharikovartem.github.io/puzzle/images/btnShare.png" alt="btnShare.png" />
               </Button>
             </div>
           </div>
@@ -127,7 +127,7 @@ const App:React.FC<any> = () => {
                 width:9,
                 height: 14
             }}
-            src="./images/icArrow@3x.png" 
+            src="https://zharikovartem.github.io/puzzle/images/icArrow@3x.png" 
             alt="icStarFull"
           />
         </div>

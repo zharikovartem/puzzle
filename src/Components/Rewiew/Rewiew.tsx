@@ -11,7 +11,7 @@ const Rewiew:React.FC<any> = () => {
             starsBlock.push(
                 <img
                     key={i.toString()}
-                    src={i !== 4 ? "./images/icStarColorFull@3x.png" : "./images/icStarColor@3x.png"}
+                    src={i !== 4 ? "https://zharikovartem.github.io/puzzle/images/icStarColorFull@3x.png" : "https://zharikovartem.github.io/puzzle/images/icStarColor@3x.png"}
                     alt="icStarColorFull"
                     style={{
                         width:14,

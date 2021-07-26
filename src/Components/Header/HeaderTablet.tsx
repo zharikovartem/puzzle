@@ -29,7 +29,7 @@ const HeaderTablet: React.FC<HeaderTabletPropsType> = (props) => {
                         width: props.initialData.logoSize.width,
                         marginRight: 28
                     }}>
-                    <img src="./images/logoJp.png" alt="logoJp" />
+                    <img src="https://zharikovartem.github.io/puzzle/images/logoJp.png" alt="logoJp" />
                 </div>
                     
                 <div className="w-100">
@@ -46,7 +46,7 @@ const HeaderTablet: React.FC<HeaderTabletPropsType> = (props) => {
                                 Jigsaw Puzzle Collection HD
                         </span>
                         <Button size="middle" className="p-0 justify-content-end" type="text" shape="round" >
-                        <img src="./images/btnShare.png" alt="btnShare.png" />
+                        <img src="https://zharikovartem.github.io/puzzle/images/btnShare.png" alt="btnShare.png" />
                     </Button>
                     </div>
                     

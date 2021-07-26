@@ -18,7 +18,7 @@ const StarLine: React.FC<StarLinePropsType> = (props) => {
                         width:7,
                         margin: 1,
                     }} 
-                    src="./images/icStarRating@3x.png" 
+                    src="https://zharikovartem.github.io/puzzle/images/icStarRating@3x.png" 
                     alt="star"
                 />
             )

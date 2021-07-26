@@ -17,7 +17,7 @@ const ImageItem:React.FC<ImageItemPropsType> = (props) => {
     return(
         <Image
             className="m-0 item"
-            src={`/images/${props.image}`}
+            src={`https://zharikovartem.github.io/puzzle/images/${props.image}`}
         />
     )
 }
