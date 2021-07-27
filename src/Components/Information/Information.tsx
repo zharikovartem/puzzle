@@ -44,7 +44,7 @@ export const GetItem:React.FC<GetItemPropsType> = (props) => {
         <div key={props.index.toString()} className="d-flex justify-content-between">
             <div className="p-2">
                 <span
-                    className="text-white-50"
+                    className="text-black-50"
                 >
                     {props.item.key}
                 </span>
