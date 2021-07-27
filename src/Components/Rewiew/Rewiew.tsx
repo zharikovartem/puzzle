@@ -46,7 +46,7 @@ const Rewiew:React.FC<any> = () => {
                             fontFamily: "Roboto, Helvetica, sans-serif",
                             fontSize: 16,
                         }}
-                        className="text-black-50"
+                        className="text-white-50"
                     >
                         Jun 17
                     </span>
@@ -62,7 +62,7 @@ const Rewiew:React.FC<any> = () => {
                             fontFamily: "Roboto, Helvetica, sans-serif",
                             fontSize: 16,
                         }}
-                        className="text-black-50"
+                        className="text-white-50"
                     >
                         UserName
                     </span>

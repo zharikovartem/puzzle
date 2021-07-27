@@ -13,7 +13,7 @@ const DescriptionItem:React.FC<ImageItemPropsType> = (props) => {
         >
             <div className="p-0 ">
                 <p 
-                    className="text-center py-0 mb-0 text-black-50" 
+                    className="text-center py-0 mb-0 text-white-50" 
                     style={{
                         fontSize: 11, 
                         lineHeight: 1.2,
@@ -27,7 +27,7 @@ const DescriptionItem:React.FC<ImageItemPropsType> = (props) => {
                 className="p-0"
             >
                 <div 
-                    className="text-center mb-0 text-black-50" 
+                    className="text-center mb-0 text-white-50" 
                     style={{
                         fontSize: 22, 
                         lineHeight: 1.2,
@@ -38,7 +38,7 @@ const DescriptionItem:React.FC<ImageItemPropsType> = (props) => {
                 </div>
             </div>
             <div className="p-0 text-center">
-                <p className="text-center mb-0 text-black-50" style={{fontSize: 12, lineHeight: 1.5}}>{props.data?.footer}</p>
+                <p className="text-center mb-0 text-white-50" style={{fontSize: 12, lineHeight: 1.5}}>{props.data?.footer}</p>
             </div>
         </div>
     )

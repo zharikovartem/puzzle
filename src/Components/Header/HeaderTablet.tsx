@@ -137,7 +137,7 @@ const HeaderTablet: React.FC<HeaderTabletPropsType> = (props) => {
                     <Button className="p-0" type="link" size="small">
                         Veraxen Ltd.
                     </Button>
-                    <p className="my-0 text-black-50" style={{fontSize: 13, lineHeight: 1}}>Developer</p>
+                    <p className="my-0 text-white-50" style={{fontSize: 13, lineHeight: 1}}>Developer</p>
                 </div>
                 </Col>
             </Row>

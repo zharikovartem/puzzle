@@ -116,7 +116,7 @@ const GetRatingInfo: React.FC = () => {
                         fontSize: 16,
                         fontWeight: "bolder"
                     }}
-                    className="text-black-50 text-center"
+                    className="text-white-50 text-center"
                 >
                   out of 5
                 </span>
@@ -132,7 +132,7 @@ const GetRatingInfo: React.FC = () => {
                       fontFamily: "Roboto, Helvetica, sans-serif",
                       fontSize: 16,
                   }}
-                  className="text-black-50"
+                  className="text-white-50"
               >
                   322,122 Ratings
               </span>

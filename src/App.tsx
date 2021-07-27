@@ -11,6 +11,7 @@ import descriptionsList from './Data/DescriptionsList';
 import Ratings from './Components/Ratings/Ratings';
 import Rewiew from './Components/Rewiew/Rewiew';
 import Information from './Components/Information/Information';
+import './blackTheme.css'
 
 import {isTablet} from 'react-device-detect';
 import HeaderTablet from './Components/Header/HeaderTablet';
@@ -34,8 +35,7 @@ const initialData: InitialDataType = {
 const App:React.FC<any> = () => {
   if (!isTablet) {
   return (
-    <div className="container-fluid">
-      black theme
+    <div className="container-fluid black">
       <div className="d-flex mt-2" style={{height: 116}}>
         <div className="" style={{height: 116, width: 116}}>
           <img src="https://zharikovartem.github.io/puzzle/images/logoJp.png" alt="logoJp" />
@@ -52,7 +52,7 @@ const App:React.FC<any> = () => {
             Jigsaw Puzzle Collection HD
           </span>
           
-          <span className="mb-1 text-black-50 text-truncate overflowed" style={{
+          <span className="mb-1 text-white-50 text-truncate overflowed" style={{
             fontSize: 15,
             fontFamily: 'Roboto, Helvetica, sans-serif'
           }}>
@@ -73,11 +73,11 @@ const App:React.FC<any> = () => {
             </Button>
 
             <div className="w-100 p-0">
-              <p className="text-left text-black-50 mt-1" style={{fontSize: 9, lineHeight: 1.1}}>In-App <br/> Purchases</p>
+              <p className="text-left text-white-50 mt-1" style={{fontSize: 9, lineHeight: 1.1}}>In-App <br/> Purchases</p>
             </div>
             <div className="mb-0 " >
               <Button size="middle" className="p-0 justify-content-end" type="text" shape="round" >
-                <img src=".https://zharikovartem.github.io/puzzle/images/btnShare.png" alt="btnShare.png" />
+                <img src="https://zharikovartem.github.io/puzzle/images/btnShare.png" alt="btnShare.png" />
               </Button>
             </div>
           </div>
@@ -114,7 +114,7 @@ const App:React.FC<any> = () => {
 
       <div className="d-flex justify-content-between">
         <div>
-          <p className="my-0 text-black-50" style={{fontSize: 13, lineHeight: 1}}>Developer</p>
+          <p className="my-0 text-white-50" style={{fontSize: 13, lineHeight: 1}}>Developer</p>
           <Button className="p-0" type="link" size="small">
             Veraxen Ltd.
           </Button>

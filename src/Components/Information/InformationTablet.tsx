@@ -39,7 +39,7 @@ type GetItemPropsType = {item: {key: string, value: string}}
 const GetItem: React.FC<GetItemPropsType> = (props) => {
     return (
         <>
-            <Row><span className="text-black-50">{props.item.key}</span></Row>
+            <Row><span className="text-white-50">{props.item.key}</span></Row>
             <Row>{props.item.value}</Row>
         </>
     )
