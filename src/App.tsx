@@ -76,7 +76,7 @@ const App:React.FC<any> = () => {
             </div>
             <div className="mb-0 " >
               <Button size="middle" className="p-0 justify-content-end" type="text" shape="round" >
-                <img src=".https://zharikovartem.github.io/puzzle/images/btnShare.png" alt="btnShare.png" />
+                <img src="https://zharikovartem.github.io/puzzle/images/btnShare.png" alt="btnShare.png" />
               </Button>
             </div>
           </div>
