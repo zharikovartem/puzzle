@@ -35,6 +35,7 @@ const App:React.FC<any> = () => {
   if (!isTablet) {
   return (
     <div className="container-fluid">
+      black theme
       <div className="d-flex mt-2" style={{height: 116}}>
         <div className="" style={{height: 116, width: 116}}>
           <img src="https://zharikovartem.github.io/puzzle/images/logoJp.png" alt="logoJp" />
