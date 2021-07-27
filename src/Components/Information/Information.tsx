@@ -1,15 +1,26 @@
+import { Divider } from 'antd'
 import React from 'react'
 import { informationData } from '../../Data/InformationData'
 
 type InformationPropsType = {}
 
 const Information: React.FC<InformationPropsType> = () => {
+
+    const getDivider = (index: number) => {
+        if (informationData.length-1 > index) {
+            return <Divider className="my-1"/>
+        }
+    }
+
     return(
         <div className="mt-4">
             {
                 informationData.map( (item, index) => {
                     return (
-                        <GetItem key={index} item={item} index={index}/>
+                        <>
+                            <GetItem key={index} item={item} index={index}/>
+                            {getDivider(index)}
+                        </>
                     )
                 })
             }

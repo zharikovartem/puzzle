@@ -31,7 +31,7 @@ const ProgressLine:React.FC<ProgressLinePropsType> = (props) => {
     return (
         <Progress 
             className="my-0"
-            strokeColor="gray"
+            strokeColor="LightGray"
             percent={props.percent} 
             showInfo={false}
             strokeWidth={4}
