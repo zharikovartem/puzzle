@@ -5,11 +5,12 @@ import './HeaderTablet.css'
 import Scrollable from './../Scrollable/Srollable'
 import descriptionsList from '../../Data/DescriptionsList'
 import DescriptionItem from '../DescriptionItem/DescriptionItem'
-import data, { bigPhotoList } from './../../Data/PhotoList'
+import { bigPhotoList } from './../../Data/PhotoList'
 import ImageItem from '../ImageItem/ImageItem'
 import Ratings from '../Ratings/Ratings'
 import Rewiew from '../Rewiew/Rewiew'
 import InformationTablet from '../Information/InformationTablet'
+import RewiewData from '../../Data/RewiewData'
 
 type HeaderTabletPropsType = {
     initialData: InitialDataType
@@ -66,11 +67,13 @@ const HeaderTablet: React.FC<HeaderTabletPropsType> = (props) => {
                             type="primary" 
                             shape="round" 
                         >
-                            <span style={{
-                                fontSize: 15
-                            }}>
-                                GET
-                            </span>
+                            <div style={{
+                                fontSize: 15,
+                                textAlign: "center",
+                                position: "absolute",
+                                top: 3,
+                                left: 19
+                            }}>GET</div>
                         </Button>
                     </div>
 
@@ -81,7 +84,7 @@ const HeaderTablet: React.FC<HeaderTabletPropsType> = (props) => {
 
             <div className="border border-bottom-0"  ></div>
 
-            <Row>
+            <Row className="my-2">
                 <Col span={3}>
                     <DescriptionItem data={descriptionsList[0]}/>
                 </Col>
@@ -126,13 +129,16 @@ const HeaderTablet: React.FC<HeaderTabletPropsType> = (props) => {
                 />
             </div>
 
+            <Divider className="mb-3 my-0"/>
+
             <Row>
-                <Col span={18}>
+                <Col span={18} className="mr-4">
                     <p style={{fontSize: 16, lineHeight: 1.2}}>
                     Play real colorful puzzles! 10,000+ beautiful HD pictures are in this app. Put together the Daily Free Puzzle and make jigsaw puzzles of yours own photos.
                     </p>
                 </Col>
-                <Col span={6}>
+                <Col span={1}></Col>
+                <Col className="ml-4" span={5}>
                 <div>
                     <Button className="p-0" type="link" size="small">
                         Veraxen Ltd.
@@ -141,66 +147,68 @@ const HeaderTablet: React.FC<HeaderTabletPropsType> = (props) => {
                 </div>
                 </Col>
             </Row>
+
+            <Divider className="mb-3 my-0"/>
             
             <div className="d-flex justify-content-between">
-        <div>
-            <p 
-                className="my-0" 
-                style={{
-                fontSize: 22, 
-                lineHeight: 1,
-                fontFamily: "Roboto, Helvetica, sans-serif",
-                fontWeight: "bolder"
-                }}
-            >
-                Ratings & Reviews
-            </p>
-        </div>
-        <div>
-            <Button className="p-0" type="link" size="small">
-                <p 
-                    className="my-0" 
-                    style={{
-                        fontSize: 17, 
+                <div>
+                    <p 
+                        className="my-0" 
+                        style={{
+                        fontSize: 22, 
                         lineHeight: 1,
                         fontFamily: "Roboto, Helvetica, sans-serif",
-                    }}
-                >
-                    See All
-                </p>
-            </Button>
-        </div>
-    </div>
+                        fontWeight: "bolder"
+                        }}
+                    >
+                        Ratings & Reviews
+                    </p>
+                </div>
+                <div>
+                    <Button className="p-0" type="link" size="small">
+                        <p 
+                            className="my-0" 
+                            style={{
+                                fontSize: 17, 
+                                lineHeight: 1,
+                                fontFamily: "Roboto, Helvetica, sans-serif",
+                            }}
+                        >
+                            See All
+                        </p>
+                    </Button>
+                </div>
+            </div>
 
-    <Ratings />
+            <Ratings />
 
-    <div className="scroll_container">
-        <Scrollable 
-          _class="review"
-          _itemClass="items"
-          data={data}
-          component={Rewiew}
-        />
-    </div>
+            <div className="scroll_container">
+                <Scrollable 
+                _class="review"
+                _itemClass="items"
+                data={RewiewData}
+                component={Rewiew}
+                />
+            </div>
 
     
-    <div>
-        <Divider className="mb-3 my-0"/>
-        <p 
-          className="my-0" 
-          style={{
-            fontSize: 22, 
-            lineHeight: 1,
-            fontFamily: "Roboto, Helvetica, sans-serif",
-            fontWeight: "bolder"
-          }}
-        >
-          Information
-        </p>
-        <InformationTablet />
-      </div>
-
-    </div>
+            <div>
+                <Divider className="mb-3 my-0"/>
+                <p 
+                className="my-0" 
+                style={{
+                    fontSize: 22, 
+                    lineHeight: 1,
+                    fontFamily: "Roboto, Helvetica, sans-serif",
+                    fontWeight: "bolder"
+                }}
+                >
+                Information
+                </p>
+                <InformationTablet />
+            </div>
+            <br/><br/>
+        </div>
     )
 }
 

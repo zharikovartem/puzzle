@@ -15,9 +15,10 @@ export type ImageItemPropsType = {
 
 const ImageItem:React.FC<ImageItemPropsType> = (props) => {
     return(
-        <Image
-            className="m-0 item"
+        <img 
+            className="m-0 item w-100 h-100"
             src={`https://zharikovartem.github.io/puzzle/images/${props.image}`}
+            alt={props.image}
         />
     )
 }
