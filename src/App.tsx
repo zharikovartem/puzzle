@@ -14,6 +14,7 @@ import Information from './Components/Information/Information';
 
 import {isTablet} from 'react-device-detect';
 import HeaderTablet from './Components/Header/HeaderTablet';
+import RewiewData from './Data/RewiewData';
 
 export type InitialDataType = {
   appNameTextSize: number
@@ -166,13 +167,11 @@ const App:React.FC<any> = () => {
 
       <Ratings />
 
-      {/* <Rewiew /> */}
-
       <div className="scroll_container">
         <Scrollable 
           _class="review"
           _itemClass="items"
-          data={data}
+          data={RewiewData}
           component={Rewiew}
         />
       </div>
