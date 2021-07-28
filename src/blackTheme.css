@@ -12,3 +12,7 @@ body {
 .ant-progress-inner{
   background-color: #303031;
 }
+
+.ant-divider{
+  background-color: gray;
+}

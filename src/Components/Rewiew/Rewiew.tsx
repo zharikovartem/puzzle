@@ -1,9 +1,8 @@
 import React from 'react'
 import './Rewiew.css';
-import rewiewData from './../../Data/RewiewData'
 import { Button } from 'antd';
 
-const Rewiew:React.FC<any> = () => {
+const Rewiew:React.FC<any> = (props) => {
 
     const getStarsLine = () => {
         const starsBlock = []
@@ -79,8 +78,8 @@ const Rewiew:React.FC<any> = () => {
                             lineHeight: '10px'
                         }}
                     >
-                        <p style={{ fontSize: 16, lineHeight: 1.25 }}>{rewiewData[1][0]}</p>
-                        <p className="" style={{ fontSize: 16, lineHeight: 1.25 }}>{rewiewData[1][1]}</p>
+                        <p style={{ fontSize: 16, lineHeight: 1.25 }}>{props.data[0]}</p>
+                        <p className="" style={{ fontSize: 16, lineHeight: 1.25 }}>{props.data[1]}</p>
                     </div>
                     <div className="d-flex flex-row-reverse">
                         <Button type="link" >more</Button>
