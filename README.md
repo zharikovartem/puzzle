@@ -13,3 +13,5 @@ npm run start
 
 #### white theme 'master' branch
 #### darck theme 'black_theme' branch
+
+To change the data, you need to edit the files in the folder src/Data
