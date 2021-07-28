@@ -10,3 +10,6 @@ Reqired NPM
 ### in terminal:
 npm install\
 npm run start
+
+#### white theme 'master' branch
+#### darck theme 'black_theme' branch
