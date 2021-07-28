@@ -8,5 +8,5 @@ Reqired NPM
 
 
 ### in terminal:
-npm install
+npm install\
 npm run start
