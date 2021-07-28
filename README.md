@@ -5,3 +5,8 @@
 
 ## install Windows:
 Reqired NPM
+
+
+### in terminal:
+npm install
+npm run start
