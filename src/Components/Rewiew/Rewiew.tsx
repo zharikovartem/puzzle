@@ -4,13 +4,13 @@ import { Button } from 'antd';
 
 const Rewiew:React.FC<any> = (props) => {
 
-    const getStarsLine = () => {
+    const getStarsLine = (stars:number) => {
         const starsBlock = []
         for (let i = 0; i < 5; i++) {
             starsBlock.push(
                 <img
                     key={i.toString()}
-                    src={i !== 4 ? "https://zharikovartem.github.io/puzzle/images/icStarColorFull@3x.png" : "https://zharikovartem.github.io/puzzle/images/icStarColor@3x.png"}
+                    src={i < stars ? "https://zharikovartem.github.io/puzzle/images/icStarColorFull@3x.png" : "https://zharikovartem.github.io/puzzle/images/icStarColor@3x.png"}
                     alt="icStarColorFull"
                     style={{
                         width:14,
@@ -36,7 +36,7 @@ const Rewiew:React.FC<any> = (props) => {
                         }}
                         className=""
                     >
-                        Title
+                        {props.data.title}
                     </span>
                 </div>
                 <div>
@@ -47,13 +47,13 @@ const Rewiew:React.FC<any> = (props) => {
                         }}
                         className="text-white-50"
                     >
-                        Jun 17
+                        {props.data.date}
                     </span>
                 </div>
             </div>
             <div className="d-flex justify-content-between mx-4">
                 <div>
-                    {getStarsLine()}
+                    {getStarsLine(props.data.stars)}
                 </div>
                 <div>
                     <span
@@ -63,7 +63,7 @@ const Rewiew:React.FC<any> = (props) => {
                         }}
                         className="text-white-50"
                     >
-                        UserName
+                        {props.data.userName}
                     </span>
                 </div>
             </div>
@@ -78,8 +78,8 @@ const Rewiew:React.FC<any> = (props) => {
                             lineHeight: '10px'
                         }}
                     >
-                        <p style={{ fontSize: 16, lineHeight: 1.25 }}>{props.data[0]}</p>
-                        <p className="" style={{ fontSize: 16, lineHeight: 1.25 }}>{props.data[1]}</p>
+                        <p style={{ fontSize: 16, lineHeight: 1.25 }}>{props.data.text[0]}</p>
+                        <p className="" style={{ fontSize: 16, lineHeight: 1.25 }}>{props.data.text[1]}</p>
                     </div>
                     <div className="d-flex flex-row-reverse">
                         <Button type="link" >more</Button>

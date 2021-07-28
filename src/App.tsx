@@ -61,19 +61,23 @@ const App:React.FC<any> = () => {
           </span>
           <div className="d-flex flex-row mb-0 justify-content-between w-100" style={{height: 28}}>
 
+          <div className="App">
             <Button 
-              style={{width: 72, height: 28, marginRight: 10, backgroundColor: "#397AFF" }} 
-              type="primary" 
-              shape="round" 
+              style={{width: 72, height: 28, marginRight: 10, backgroundColor: "#397AFF", textAlign: "center"}} 
+              type="primary"
+              shape="round"
             >
-              <span style={{
-                fontSize: 15
-              }}>
-                GET
-              </span>
+              <div style={{
+                fontSize: 15,
+                textAlign: "center",
+                position: "absolute",
+                top: 2,
+                left: 22
+                }}>GET</div>
             </Button>
+          </div>
 
-            <div className="w-100 p-0">
+            <div className="w-100 p-0 ml-2">
               <p className="text-left text-white-50 mt-1" style={{fontSize: 9, lineHeight: 1.1}}>In-App <br/> Purchases</p>
             </div>
             <div className="mb-0 " >
@@ -198,10 +202,6 @@ const App:React.FC<any> = () => {
       
 
       <br/><br/>
-      <div>
-        TOOLBAR ???
-      </div>
-      <br/><br/><br/><br/>
     </div>
   )
   } else {
